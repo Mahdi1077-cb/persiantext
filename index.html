@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>سازنده متن فارسی</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
+    <style>
+        @font-face {
+            font-family: 'Vazir';
+            src: url('fonts/Vazir.woff2') format('woff2'),
+                 url('fonts/Vazir.woff') format('woff'),
+                 url('fonts/Vazir.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Doran';
+            src: url('Doran.woff2') format('woff2'),
+                 url('Doran.woff') format('woff'),
+                 url('Doran.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Maneli';
+            src: url('Maneli.ttf'),
+                 url('Maneli.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'MorabbaEco';
+            src: url('Morabba-Bold.woff2') format('woff2'),
+                 url('Morabba-Bold.woff') format('woff'),
+                 url('Morabba-Bold.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Peyda';
+            src: url('PeydaWebFaNum-Bold.woff2') format('woff2'),
+                 url('PeydaWebFaNum-Bold.woff') format('woff'),
+                 url('PeydaFaNum-Bold.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'YekanBakh';
+            src: url('YekanBakh-Regular.woff2') format('woff2'),
+                 url('YekanBakh-Regular.woff') format('woff'),
+                 url('YekanBakh-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>سازنده متن فارسی</h1>
+        <div class="controls">
+            <div class="input-group">
+                <input type="text" id="textInput" placeholder="متن خود را اینجا وارد کنید">
+                <select id="fontSelect">
+                    <option value="vazir">وزیر</option>
+                    <option value="doran">دوران</option>
+                    <option value="maneli">مانلی</option>
+                    <option value="morabbaeco">مربع </option>
+                    <option value="peyda">پیدا</option>
+                    <option value="yekanbakh">یکان بخ</option>
+                </select>
+            </div>
+            <div class="color-group">
+                <label for="colorPicker">انتخاب رنگ</label>
+                <input type="color" id="colorPicker" value="#e63944">
+            </div>
+            <button id="generateBtn">تولید متن</button>
+        </div>
+        
+        <div class="effects-container" style="display: none;">
+            <div class="effect-box">
+                <h2>سبک ساده</h2>
+                <div id="effect1" class="text-effect"></div>
+                <button class="download-btn" data-effect="effect1">دانلود PNG</button>
+            </div>
+            <div class="effect-box">
+                <h2>سبک نئون</h2>
+                <div id="effect2" class="text-effect"></div>
+                <button class="download-btn" data-effect="effect2">دانلود PNG</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
