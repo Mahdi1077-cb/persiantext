@@ -1,0 +1,164 @@
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    /* Base font settings for mobile */
+    * {
+        font-family: 'YekanBakh', 'Doran', 'Peyda', 'MorabbaEco', 'Vazir', 'Maneli', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        text-align: right;
+        direction: rtl;
+        unicode-bidi: bidi-override;
+    }
+
+    /* Persian text specific settings */
+    .text-effect, input[type="text"] {
+        letter-spacing: 0;
+        word-spacing: 0;
+        text-align: right;
+        direction: rtl;
+        unicode-bidi: bidi-override;
+        font-feature-settings: "liga" 1, "dlig" 1;
+        -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+        -moz-font-feature-settings: "liga" 1, "dlig" 1;
+        -ms-font-feature-settings: "liga" 1, "dlig" 1;
+        -o-font-feature-settings: "liga" 1, "dlig" 1;
+    }
+
+    /* Container adjustments */
+    .container {
+        padding: 1rem;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Controls adjustments */
+    .controls {
+        padding: 1.5rem;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    /* Input and select adjustments */
+    .input-group {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    input[type="text"],
+    select {
+        width: 100%;
+        font-size: 16px; /* Prevent zoom on iOS */
+        padding: 0.75rem;
+        font-family: 'YekanBakh', 'Doran', 'Peyda', 'MorabbaEco', 'Vazir', 'Maneli', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+    }
+
+    /* Color picker adjustments */
+    .color-group {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .color-group label {
+        text-align: center;
+        min-width: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    input[type="color"] {
+        width: 10%;
+        height: 40px;
+        border-radius: 10px;
+        align-items: center;
+    }
+
+    /* Button adjustments */
+    button {
+        text-align: center;
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        padding: 0.75rem;
+        font-size: 16px;
+        font-family: 'YekanBakh', 'Doran', 'Peyda', 'MorabbaEco', 'Vazir', 'Maneli', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    /* Effects container adjustments */
+    .effects-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .effect-box {
+        padding: 1rem;
+    }
+
+    /* Text effect adjustments */
+    .text-effect {
+        font-size: 2rem;
+        min-height: 200px;
+        padding: 1rem;
+        font-family: 'YekanBakh', 'Doran', 'Peyda', 'MorabbaEco', 'Vazir', 'Maneli', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    /* Font loading states for mobile */
+    .font-loading {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        font-family: 'YekanBakh', 'Doran', 'Peyda', 'MorabbaEco', 'Vazir', 'Maneli', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .font-loaded {
+        opacity: 1;
+    }
+
+    /* Mobile-specific font classes with proper fallbacks */
+    .vazir-font {
+        font-family: 'Vazir', 'YekanBakh', 'Doran', 'Peyda', 'MorabbaEco', 'Maneli', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .doran-font {
+        font-family: 'Doran', 'YekanBakh', 'Peyda', 'MorabbaEco', 'Vazir', 'Maneli', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .maneli-font {
+        font-family: 'Maneli', 'YekanBakh', 'Doran', 'Peyda', 'MorabbaEco', 'Vazir', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .morabbaeco-font {
+        font-family: 'MorabbaEco', 'YekanBakh', 'Doran', 'Peyda', 'Vazir', 'Maneli', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .peyda-font {
+        font-family: 'Peyda', 'YekanBakh', 'Doran', 'MorabbaEco', 'Vazir', 'Maneli', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .yekanbakh-font {
+        font-family: 'YekanBakh', 'Doran', 'Peyda', 'MorabbaEco', 'Vazir', 'Maneli', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    /* Headings font settings */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'YekanBakh', 'Doran', 'Peyda', 'MorabbaEco', 'Vazir', 'Maneli', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+}
+
+/* Additional mobile optimizations */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .text-effect {
+        font-size: 1.5rem;
+        min-height: 150px;
+    }
+} 
